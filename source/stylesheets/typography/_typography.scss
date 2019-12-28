@@ -1,0 +1,60 @@
+.typography {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #3b4b5b;
+  margin: 11px;
+}
+
+.typography-title {
+  font-weight: bold;
+
+  &.-page-title {
+    font-size: 34px;
+    letter-spacing: -2px;
+    margin-bottom: 42px;
+  }
+
+  &.-h1 {
+    font-size: 28px;
+    letter-spacing: -1.5px;
+    margin-bottom: 20px;
+  }
+
+  &.-h2 {
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    margin-bottom: 11px;
+  }
+
+  &.-h3 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 11px;
+  }
+
+  &.-h4 {
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    margin-bottom: 7px;
+  }
+}
+
+.typography-lead {
+  & + .typography-title {
+    margin-top: 42px;
+  }
+}
+
+.typography-article {
+  .typography-lead + & {
+    margin-top: 42px;
+  }
+
+  & + & {
+    margin-top: 42px;
+  }
+
+  .typography-article__sub {
+    margin-top: 21px;
+  }
+}
