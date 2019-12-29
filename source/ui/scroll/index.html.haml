@@ -2,4 +2,38 @@
 title: スムーズスクロール
 ---
 
+%ui{ data: { controller: "scroll" } }
+  %li{ data: { action: "click->scroll#smooth" } }
+    テストです
+  %li
+    %a{ href: "#toc1", data: { action: "scroll#smooth" } } 目次です１
+  %li
+    %a{ href: "#toc2" } 目次です2
+  %li
+    %a{ href: "#toc3" } 目次です3
+  %li
+    %a{ href: "#toc4" } 目次です4
 
+- 10.times do
+  %br
+
+#toc1
+  %h2 目次です１
+
+- 10.times do
+  %br
+
+#toc2
+  %h2 目次です2
+
+- 10.times do
+  %br
+
+#toc3
+  %h2 目次です3
+
+- 10.times do
+  %br
+
+#toc4
+  %h2 目次です4
