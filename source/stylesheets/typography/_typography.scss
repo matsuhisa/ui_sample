@@ -9,6 +9,10 @@
 .typography-title {
   font-weight: bold;
 
+  &.-margin-bottom-10 {
+    margin-bottom: 10px !important; // テスト用のため
+  }
+
   &.-page-title {
     font-size: 34px;
     letter-spacing: -2px;
@@ -35,7 +39,7 @@
 
   &.-h4 {
     font-size: 14px;
-    letter-spacing: 0.25px;
+    letter-spacing: 0.5px;
     margin-bottom: 7px;
   }
 }
