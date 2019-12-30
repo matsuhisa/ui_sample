@@ -6,11 +6,11 @@
     "@babel/preset-env": "^7.7.7",
     "@stimulus/polyfills": "^1.1.1",
     "babel-loader": "^8.0.6",
+    "smoothscroll-polyfill": "^0.4.4",
     "stimulus": "^1.1.1",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"
   },
-
   "scripts": {
     "develop": "webpack --config ./webpack.config.js --watch -d --progress --colors",
     "build": "webpack --config ./webpack.config.js --bail -p",
