@@ -13,6 +13,7 @@
 
 - [ ] scroll / スムーズスクロール
 - [ ] tags / タブ
+- [ ] pager
 - [ ] アコーディオンメニュー
 - [ ] dialog / ダイアログ
 - [ ] LIKE button
