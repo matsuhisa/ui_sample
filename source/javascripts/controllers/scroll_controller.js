@@ -12,10 +12,13 @@ export default class extends Controller {
 
     smoothscroll.polyfill()
     if(targetId) {
+      console.log(targetId)
+      history.pushState("", "", targetId)
+
       document.querySelector(targetId).scrollIntoView({
         behavior: "smooth",
         block: "start"
-      });
+      })
     }
   }
 }
