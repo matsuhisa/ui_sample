@@ -1,0 +1,73 @@
+---
+title: タブ
+---
+= stylesheet_link_tag "tabs"
+
+%h2 タブ（ぴったり）
+
+.tablist{ role: "tablist" }
+  .tablist__scroll
+    .tablist__scroll-area
+      .tablist__content
+        .tablist__tab{ tabindex: 0, role: "tab", aria: { selected: "true" } }
+          .tablist__tab-wrapper
+            .tablist__tab-content
+              %span.material-icons access_time
+              %span.tablist__tab-content-label タブ１
+            .tablist__tab-content-indicator
+              %span.tablist__tab-content-underline
+        .tablist__tab{ tabindex: 0, role: "tab", aria: { selected: "false" } }
+          .tablist__tab-wrapper
+            .tablist__tab-content
+              %span.material-icons favorite
+              %span.tablist__tab-content-label タブ１
+            .tablist__tab-content-indicator
+              %span.tablist__tab-content-underline
+        .tablist__tab{ tabindex: 0, role: "tab", aria: { selected: "false" } }
+          .tablist__tab-wrapper
+            .tablist__tab-content
+              %span.material-icons star
+              %span.tablist__tab-content-label タブ１
+            .tablist__tab-content-indicator
+              %span.tablist__tab-content-underline
+
+
+%h2 タブ（ぴったり）
+
+
+
+// .tabpanels
+//   .tabpanel{ role: "tabpanel", data: "foo1" }
+//   .tabpanel{ role: "tabpanel", data: "foo2" }
+//   .tabpanel{ role: "tabpanel", data: "foo3" }
+
+%h2 タブ（横スクロール）
+
+.tablist{ role: "tablist" }
+  .tablist__scroll
+    .tablist__scroll-area
+      .tablist__content
+        .tablist__tab{ tabindex: 0, role: "tab", aria: { selected: "true" } }
+          .tablist__tab-content
+            タブ１
+        .tablist__tab{ tabindex: 0, role: "tab", aria: { selected: "true" } }
+          .tablist__tab-content
+            タブ１
+        .tablist__tab{ tabindex: 0, role: "tab", aria: { selected: "true" } }
+          .tablist__tab-content
+            タブ１
+        .tablist__tab{ tabindex: 0, role: "tab", aria: { selected: "true" } }
+          .tablist__tab-content
+            タブ１
+        .tablist__tab{ tabindex: 0, role: "tab", aria: { selected: "true" } }
+          .tablist__tab-content
+            タブ１
+        .tablist__tab{ tabindex: 0, role: "tab", aria: { selected: "true" } }
+          .tablist__tab-content
+            タブ１
+        .tablist__tab{ tabindex: 0, role: "tab", aria: { selected: "true" } }
+          .tablist__tab-content
+            タブ１
+        .tablist__tab{ tabindex: 0, role: "tab", aria: { selected: "true" } }
+          .tablist__tab-content
+            タブ１
