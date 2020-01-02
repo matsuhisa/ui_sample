@@ -1,0 +1,64 @@
+.tablist {
+  display: block;
+  margin-bottom: 20px;
+
+  .tablist__scroll {
+  }
+
+  .tablist__scroll-area {
+  }
+
+  .tablist__content {
+    display: inline-table;
+    width: 100%;;
+  }
+
+  .tablist__tab {
+    color: #8198ae;
+    display: table-cell;
+    text-align: center;
+
+    &[aria-selected="true"] {
+      color: #3b4b5b;
+      font-weight: bold;
+
+      .tablist__tab-content-underline {
+        border-color: #2fc3a7;
+      }
+    }
+  }
+
+  .tablist__tab-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    background-color: greenyellow;
+  }
+
+  .tablist__tab-content {
+    display: flex;
+    justify-content: center;
+
+    &.-wide {
+      flex-direction: column;
+    }
+  }
+
+  .tablist__tab-content-indicator {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .tablist__tab-content-underline {
+    box-sizing: border-box;
+    border-width: 2px;
+    border-top-style: solid;
+    border-color: transparent;
+    height: 2px;
+  }
+}
