@@ -1,0 +1,31 @@
+.demo1 {
+  border: 1px solid red;
+  color: #8198ae;
+  opacity: 0;
+  width: 100px;
+  transition-duration: 2s, 0.1s, 1s;
+  transition-delay: 0s, 0s, 1s;
+  transition-property: width, opacity, color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: #ff658b;
+    opacity: 1;
+    width: 200px;
+  }
+}
+
+.demo2 {
+  border: solid red;
+  transform: translate(30px, 20px);
+  width: 140px;
+
+  transition-duration: 0.25s;
+  transition-delay: 0s;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &[aria-selected="true"] {
+    transform: translate(100px, 40px);
+  }
+}
