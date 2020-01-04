@@ -1,24 +1,24 @@
 {
   "presets": [
-    "@babel/preset-env"
+    ["@babel/preset-env", { "loose": true }]
   ],
 
-  "env": {
-    "test": {
-      "presets": [
-        ["@babel/preset-env", {
-          "targets": {
-            "node": "current",
-          }
-        }]
-      ],
-      "plugins": [
-        ["@babel/plugin-proposal-class-properties", { "spec": true }]
-      ]
-    }
-  },
+  // "env": {
+  //   "test": {
+  //     "presets": [
+  //       ["@babel/preset-env", {
+  //         "targets": {
+  //           "node": "current",
+  //         }
+  //       }]
+  //     ],
+  //     "plugins": [
+  //       ["@babel/plugin-proposal-class-properties", { "spec": true }]
+  //     ]
+  //   }
+  // },
 
   "plugins": [
-    "@babel/plugin-proposal-class-properties"
+    ["@babel/plugin-proposal-class-properties", { "loose": true }]
   ]
 }
