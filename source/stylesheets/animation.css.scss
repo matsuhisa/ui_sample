@@ -51,7 +51,8 @@
       }
 
       .tablist__tab-underline {
-        border-color: greenyellow;
+        // border-color: greenyellow;
+        border-top-color: greenyellow;
         opacity: 1;
       }
     }
@@ -94,9 +95,10 @@
     border-top-style: solid;
     opacity: 0;
 
-    transition-duration: 2s;
+    transition-duration: 2s, 2s, 0s;
     transition-delay: 0s;
     // transition-property: transform, opacity;
+    transition-property: transform, border-top-color, opacity;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
