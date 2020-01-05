@@ -7,12 +7,39 @@ title: アニメーション
 
 %h2 Demos
 
-%h3 色が変わる
+%h3 色が変わる（hover）
 
 .demo1
   %span.material-icons favorite
 
+%hr
+
+%h3 位置が変わる（aria-selected）
+
+-# .demo2
+-#   foo
+
+%hr
+
 %h3 位置が変わる
 
-.demo2
-  foo
+.demo3
+  .tablist{ data: { controller: "aria-selected"} }
+    .tablist__tab{ data: { target: "aria-selected.item", action: "click->aria-selected#toggle" }, aria: { selected: "true" } }
+      .tablist__tab-contents
+        .tablist__tab-label
+          タブ１
+          %br
+          あいうえお
+      .tablist__tab-indicator
+        .tablist__tab-underline
+    .tablist__tab{ data: { target: "aria-selected.item", action: "click->aria-selected#toggle" } }
+      .tablist__tab-contents
+        .tablist__tab-label タブ２
+      .tablist__tab-indicator
+        .tablist__tab-underline
+    .tablist__tab{ data: { target: "aria-selected.item", action: "click->aria-selected#toggle" } }
+      .tablist__tab-contents
+        .tablist__tab-label タブ３
+      .tablist__tab-indicator
+        .tablist__tab-underline
