@@ -13,13 +13,13 @@
 
 - [x] scroll / スムーズスクロール
 - [ ] tags / タブ
-- [ ] pager
 - [ ] アコーディオンメニュー
+- [ ] sheets / bottom
+- [ ] pager
 - [ ] dialog / ダイアログ
 - [ ] LIKE button
 - [ ] drwaer
 - [ ] floating action button
-- [ ] sheets / bottom
 - [ ] tooltips
 - [ ] Chips
 - [ ] menu
