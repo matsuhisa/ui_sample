@@ -1,0 +1,14 @@
+.demo2 {
+  border: solid red;
+  transform: translate(30px, 20px);
+  width: 140px;
+
+  transition-duration: 0.25s;
+  transition-delay: 0s;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &[aria-selected="true"] {
+    transform: translate(100px, 40px);
+  }
+}
