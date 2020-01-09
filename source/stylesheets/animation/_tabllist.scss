@@ -1,10 +1,11 @@
 
 
 .tablist {
-  display: inline-table;
+  // display: inline-table;
+  display: flex;
 
   .tablist__tab {
-    display: table-cell;
+    // display: table-cell;
     width: 200px;
     position: relative;
 
@@ -36,6 +37,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    min-height: 0%;
   }
 
   .tablist__tab-indicator {
@@ -52,6 +55,8 @@
     flex-direction: column;
 
     justify-content: flex-end;
+
+    min-height: 100%;
   }
 
   .tablist__tab-label {
