@@ -34,7 +34,7 @@
     box-sizing: border-box;
     border-radius: 4px;
 
-    &:hover {
+    &:active {
       &::after {
         opacity: 0.2;
         border-width: 200px;
