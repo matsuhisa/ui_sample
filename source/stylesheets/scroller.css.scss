@@ -1,0 +1,30 @@
+.scroller {
+  overflow: hidden;
+  box-sizing: border-box;
+  border-bottom: 1px solid green;
+
+  &.-scroller {
+    width: 100px;
+  }
+
+  .scroller__container {
+    width: 100%;
+    height: calc(100% + 2em);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .scroller__scroll-aria {
+    display: flex;
+    max-width: 100%;
+  }
+
+  .scroller__item {
+    flex: 1;
+    min-width: 100px;
+
+    &:hover {
+      background-color: yellowgreen;
+    }
+  }
+}
