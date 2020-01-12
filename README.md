@@ -12,7 +12,7 @@
 ## サンプルリスト
 
 - [x] scroll / スムーズスクロール
-- [ ] scroll / 横スクロール
+- [x] scroll / 横スクロール
 - [ ] tags / タブ
 - [ ] アコーディオンメニュー
 - [ ] sheets / bottom
