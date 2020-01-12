@@ -20,8 +20,12 @@
   }
 
   .scroller__item {
-    flex: 1;
+    flex:1 1 auto;
     min-width: 100px;
+
+    &.-spacing-M {
+      margin-right: 20px;
+    }
 
     &:hover {
       background-color: yellowgreen;
