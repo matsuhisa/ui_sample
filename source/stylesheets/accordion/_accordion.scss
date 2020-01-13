@@ -4,6 +4,14 @@
   margin: 1em;
   padding: 1em;
 
+  .accordion__panel {
+    &[aria-hidden="false"] {
+      .accordion__panel-content {
+        max-height: 500px;
+      }
+    }
+  }
+
   .accordion__panel-head {
     display: flex;
     cursor :pointer;
@@ -19,10 +27,5 @@
 
     overflow-y: hidden;
     max-height: 0;
-
-
-    &[aria-hidden="false"] {
-      max-height: 500px;
-    }
   }
 }

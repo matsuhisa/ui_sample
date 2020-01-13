@@ -6,17 +6,17 @@ title: アコーディオン
 %h1 Expansion Panel
 
 .accordion
-  .accordion__panel{ data: { controller: "expansion" } }
+  .accordion__panel{ data: { controller: "expansion", target: "expansion.content" }, aria: { hidden: "true" } }
     .accordion__panel-head{ data: { action: "click->expansion#toggle", target: "expansion.head" } }
       .accordion__panel-head-title
         あいうえお
       .accordion__panel-head-icon{ data: { target: "expansion.icon" } }
-    .accordion__panel-content{ aria: { hidden: "true" }, data: { target: "expansion.content" } }
+    .accordion__panel-content
       %img{ src: "https://picsum.photos/id/237/200/200" }
-  .accordion__panel{ data: { controller: "expansion" } }
+  .accordion__panel{ data: { controller: "expansion", target: "expansion.content" }, aria: { hidden: "false" } }
     .accordion__panel-head{ data: { action: "click->expansion#toggle", target: "expansion.head" } }
       .accordion__panel-head-title
         あいうえお
       .accordion__panel-head-icon{ data: { target: "expansion.icon" } }
-    .accordion__panel-content{ aria: { hidden: "true" }, data: { target: "expansion.content" } }
+    .accordion__panel-content
       %img{ src: "https://picsum.photos/id/237/200/200" }
