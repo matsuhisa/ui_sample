@@ -16,7 +16,7 @@
 - [x] scroll / スムーズスクロール
 - [x] scroll / 横スクロール
 - [ ] tags / タブ
-- [ ] アコーディオンメニュー
+- [x] アコーディオンメニュー
 - [ ] sheets / bottom
 - [ ] pager
 - [ ] dialog / ダイアログ
