@@ -1,6 +1,6 @@
 .sheets-bottom {
   border-radius: 4px 4px 0 0;
-  box-shadow: 0 2px 10px 8px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+  box-shadow: none;
 
   position: fixed;
   bottom: -1px;
@@ -9,12 +9,22 @@
 
   background-color: #ffffff;
 
-  width: calc( 100% - 2em );
-  height: 80vh;
-  margin: 0 1em;
-
   overflow: hidden;
+
+  width: calc( 100% - 2em );
+  margin: 0 1em;
+  max-height: 0;
 
   box-sizing: border-box;
   border: 1px solid red;
+
+  transition-duration: 0.25s, 0.1s;
+  transition-delay: 0s, 0s;
+  transition-property: max-height, box-shadow;
+  transition-timing-function: ease-in, ease-in;
+
+  &:hover {
+    box-shadow: 0 2px 10px 8px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+    max-height: 80vh;
+  }
 }
