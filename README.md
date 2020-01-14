@@ -17,7 +17,7 @@
 - [x] scroll / 横スクロール
 - [ ] tags / タブ
 - [x] アコーディオンメニュー
-- [ ] sheets / bottom
+- [ ] sheets / bottom https://material.io/components/sheets-bottom/#standard-bottom-sheet
 - [ ] pager
 - [ ] dialog / ダイアログ
 - [ ] LIKE button
