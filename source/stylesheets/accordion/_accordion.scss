@@ -1,11 +1,28 @@
 .accordion {
-  border-radius: 4px;
-  box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
-  margin: 1em;
-  padding: 1em;
+  box-sizing: border-box;
+
+  .accordion__panel + .accordion__panel {
+    border-top: none;
+  }
 
   .accordion__panel {
+    box-sizing: border-box;
+
+    border-top: 1px solid #e2d6bd;
+    border-bottom: 1px solid #e2d6bd;
+
+    &[aria-hidden="true"] {
+      .accordion__panel-head {
+        &:hover {
+          background-color: #f7f8fa;
+        }
+      }
+    }
+
     &[aria-hidden="false"] {
+      .accordion__panel-head-icon {
+        transform: rotate(90deg);
+      }
       .accordion__panel-content {
         max-height: 500px;
       }
@@ -13,19 +30,66 @@
   }
 
   .accordion__panel-head {
-    display: flex;
+    box-sizing: border-box;
     cursor :pointer;
+    display: flex;
+
+    padding: .4em .8em;
+    text-decoration: none;
+  }
+
+  .accordion__panel-head-icon {
+    font-size: 1em;
+
+    transition-duration: 0.25s;
+    transition-delay: 0s;
+    transition-property: transform;
+    transition-timing-function: ease-in;
   }
 
   .accordion__panel-content {
     box-sizing: border-box;
+    overflow-y: hidden;
+    padding: 0 .8em;
 
-    transition-duration: 0.15s;
+    transition-duration: 0.25s;
     transition-delay: 0s;
     transition-property: max-height;
     transition-timing-function: ease-in;
 
-    overflow-y: hidden;
     max-height: 0;
   }
 }
+
+
+// .accordion {
+//   border-radius: 4px;
+//   box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+//   margin: 1em;
+//   padding: 1em;
+
+//   .accordion__panel {
+//     &[aria-hidden="false"] {
+//       .accordion__panel-content {
+//         max-height: 500px;
+//       }
+//     }
+//   }
+
+//   .accordion__panel-head {
+//     display: flex;
+//     cursor :pointer;
+//   }
+
+//   .accordion__panel-content {
+//     box-sizing: border-box;
+
+//     transition-duration: 0.15s;
+//     transition-delay: 0s;
+//     transition-property: max-height;
+//     transition-timing-function: ease-in;
+
+//     overflow-y: hidden;
+//     max-height: 0;
+//   }
+// }
