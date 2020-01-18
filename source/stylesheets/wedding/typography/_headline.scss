@@ -1,0 +1,33 @@
+.headline {
+  font-weight: bold;
+
+  &.-page-title {
+    font-size: 34px;
+    letter-spacing: -2px;
+    margin-bottom: 50px;
+  }
+
+  &.-h1 {
+    font-size: 28px;
+    letter-spacing: -1.5px;
+    margin-bottom: 25px;
+  }
+
+  &.-h2 {
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+  }
+
+  &.-h3 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+  }
+
+  &.-h4 {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    margin-bottom: 7px;
+  }
+}
