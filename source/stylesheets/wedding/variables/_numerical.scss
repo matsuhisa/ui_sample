@@ -1,0 +1,4 @@
+.symbol-numerical {
+  @include symbol-base;
+  text-decoration-skip-ink: none;
+}
