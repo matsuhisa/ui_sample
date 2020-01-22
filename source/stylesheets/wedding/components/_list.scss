@@ -1,8 +1,19 @@
 .list {
 
   .list__item {
+    border-top: 1px solid $color-navy-3S;
+    border-bottom: 1px solid $color-navy-3S;
   }
 
-  .list__item-text {
+  .list__item + .list__item {
+    border-top: none;
+  }
+
+  .list__contents {
+    padding: 1em .5em;
+    display: flex;
+    justify-content: space-between;
+
+    text-decoration: none;
   }
 }
