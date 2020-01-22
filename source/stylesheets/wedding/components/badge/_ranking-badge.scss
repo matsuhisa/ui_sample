@@ -1,0 +1,18 @@
+.ranking-badge {
+  @include symbol-base;
+
+  &.-ranking-1:before {
+    color: #ac8c4b;
+    content: "#{map-get($symbol-unicodes, 'ranking-1')}";
+  }
+
+  &.-ranking-2:before {
+    color: #8198ae;
+    content: "#{map-get($symbol-unicodes, 'ranking-2')}";
+  }
+
+  &.-ranking-3:before {
+    color: #cc9966;
+    content: "#{map-get($symbol-unicodes, 'ranking-3')}";
+  }
+}
