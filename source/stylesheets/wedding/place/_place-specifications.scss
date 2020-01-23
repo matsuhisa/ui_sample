@@ -1,0 +1,29 @@
+.place-specifications {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  .place-specifications__item {
+    box-sizing: border-box;
+
+    background-color: $color-navy-3S;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: calc((100% / 4) - ((10px * 3)/4));
+    min-height: 64px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+
+    &.-disable {
+      background-color: $color-navy-5S;
+      color: $color-navy-2S;
+    }
+  }
+}
