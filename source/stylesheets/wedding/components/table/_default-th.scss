@@ -1,0 +1,12 @@
+.default-th {
+  background-color: $color-navy-5S;
+  border-right: 1px solid $color-navy-2S;
+  border-bottom: 1px solid $color-navy-2S;
+  font-weight: bold;
+  padding: .5em;
+  text-align: left;
+
+  &:first-child {
+    border-left: 1px solid $color-navy-2S;
+  }
+}
