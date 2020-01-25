@@ -1,0 +1,62 @@
+.place-wedding-report {
+  display: flex;
+
+  & + & {
+    margin-top: calc( 0.5em * 1.6);
+  }
+
+  // padding-top: calc( 0.5em * 1.6);
+  // padding-bottom: calc( 0.5em * 1.6);
+  // & + & {
+  //   border-top: 1px solid $color-navy-3S;
+  // }
+
+  &[href] {
+    text-decoration: none;
+  }
+
+  .place-wedding-report__thumbnail {
+    width: 80px;
+  }
+
+  .place-wedding-report__body {
+    flex: 1;
+    padding-left: 7px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .place-wedding-report__title {
+    text-decoration: underline;
+
+    // -h4 相当
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    margin-bottom: 7px;
+  }
+
+  .place-wedding-report__datetime {
+    color: $color-navy-1S;
+    font-size: .8em;
+  }
+
+  .place-wedding-report__author {
+    padding-top: 7px;
+    display: flex;
+  }
+
+  .place-wedding-report__author-thumbnail {
+    width: 28px;
+  }
+
+  .place-wedding-report__author-body {
+    flex: 1;
+    padding-left: 7px;
+  }
+
+  .place-wedding-report__author-state {
+  }
+}
