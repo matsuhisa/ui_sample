@@ -1,0 +1,23 @@
+.place-main-view {
+  overflow: hidden;
+  box-sizing: border-box;
+  border-bottom: 1px solid green;
+
+  .place-main-view__images {
+    width: 100%;
+    height: calc(100% + 2em);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .place-main-view__images-aria{
+    display: flex;
+    max-width: 100%;
+  }
+
+  .place-main-view__image {
+    // flex:1 1 auto;
+    // min-width: 100px;
+    margin-right: 10px;
+  }
+}
