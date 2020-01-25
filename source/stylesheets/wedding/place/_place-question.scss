@@ -1,0 +1,54 @@
+.place-question {
+  display: flex;
+
+  & + & {
+    margin-top: calc( 0.5em * 1.6);
+  }
+
+  &[href] {
+    text-decoration: none;
+  }
+
+  .place-question__questioner {
+    width: 32px;
+  }
+
+  .place-question__body {
+    flex: 1;
+    padding-left: calc( (1em * 1.6) * 0.5 );
+  }
+
+  .place-question__title {
+    text-decoration: underline;
+
+    // -h4 相当
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    margin-bottom: 7px;
+  }
+
+  .place-question__descripiton {
+    color: $color-navy-1S;
+  }
+
+  .place-question__footer {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: calc( 0.25em * 1.6 );
+  }
+
+  .place-question__category {
+    display: inline-block;
+  }
+
+  .place-question__answer-count {
+    display: inline-block;
+    &::before {
+      @include symbol-base;
+      content: "#{map-get($symbol-unicodes, 'fukidashi')}";
+      padding-right: 0.5em;
+    }
+  }
+}
