@@ -1,0 +1,25 @@
+.default-scroller {
+  overflow: hidden;
+  box-sizing: border-box;
+
+  .default-scroller__container {
+    width: 100%;
+    height: calc(100% + 2em); // スクロールバーの位置調整のため
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .default-scroller__scroll-aria {
+    display: flex;
+    max-width: 100%;
+  }
+
+  @at-root {
+    .default-scroller__item {
+      min-width: 100px;
+      & + & {
+        margin-left: .5em;
+      }
+    }
+  }
+}
