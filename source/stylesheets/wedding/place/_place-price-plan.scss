@@ -1,0 +1,73 @@
+.place-price-plan {
+
+  & + & {
+    margin-top: calc( 1em * 1.6);
+  }
+
+  &.-advertising{
+    .place-price-plan__label {
+      color: $color-pink-D;
+    }
+
+    .place-price-plan__price {
+      color: $color-pink-D;
+    }
+  }
+
+  .place-price-plan__label {
+    color: $color-gold-D;
+  }
+
+  .place-price-plan__thumbnail {
+    width: 80px;
+  }
+
+  .place-price-plan__contents {
+    display: flex;
+  }
+
+  .place-price-plan__title {
+    text-decoration: underline;
+
+    // -h4 相当
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    margin-bottom: 7px;
+  }
+
+  .place-price-plan__price-body {
+    flex: 1;
+    padding-left: .5em;
+  }
+
+  .place-price-plan__price-view {
+    padding: .5em;
+    text-align: center;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+  }
+
+  .place-price-plan__price {
+    line-height: 1;
+
+    // -h2 相当
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    // margin-bottom: 12px;
+  }
+
+  .place-price-plan__price-people {
+    border-top: 1px solid $color-navy-3S;
+    text-align: center;
+    padding: .5em;
+  }
+
+  .place-price-plan_descripiton {
+    color: $color-navy;
+    font-size: .8em;  // typography に入れる
+    line-height: 1.4;
+  }
+}
