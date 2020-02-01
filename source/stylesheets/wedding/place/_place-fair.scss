@@ -1,0 +1,56 @@
+.place-fair {
+  // 高さが揃わない
+  box-shadow: 0 1px 6px 0 rgba(0,0,0,0.16);
+  border-radius: 4px;
+  display: block;
+  overflow: hidden;
+  width: 200px;
+  margin-bottom: 1em;
+
+  &[href] {
+    text-decoration: none;
+    .place-fair__title {
+      text-decoration: underline;
+    }
+  }
+
+  &.-margin-left-S{
+    margin-left: 0.5em;
+  }
+
+  .place-fair__thumbnail {
+    width: 100%;
+  }
+
+  .place-fair__datetime {
+    margin: .5em 0 1em;
+  }
+
+  .place-fair__datetime-date {
+    // -h3 相当
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+    // margin-bottom: 12px;
+
+    // &.-saturday {
+    //   color: $color-blue-D
+    // }
+
+    // &.-sunday {
+    //   color: $color-pink-D;
+    // }
+  }
+
+  .place-fair__title {
+    // -h4 相当
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    margin-bottom: 7px;
+  }
+
+  .place-fair__body {
+    padding: 0 .5em .5em;
+  }
+}
