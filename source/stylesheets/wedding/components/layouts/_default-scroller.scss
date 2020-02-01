@@ -2,6 +2,11 @@
   overflow: hidden;
   box-sizing: border-box;
 
+  // 不要かもしれない __item の最初に margin をつけるのもありかもしれない
+  &.-padding-M {
+    padding: 0 1em;
+  }
+
   .default-scroller__container {
     width: 100%;
     height: calc(100% + 2em); // スクロールバーの位置調整のため
@@ -16,9 +21,14 @@
 
   @at-root {
     .default-scroller__item {
-      min-width: 100px;
+      flex: 1;
+
+      // &:first-child {
+      //   margin-left: 1em;
+      // }
+
       & + & {
-        margin-left: .5em;
+        margin-left: 1em;
       }
     }
   }
