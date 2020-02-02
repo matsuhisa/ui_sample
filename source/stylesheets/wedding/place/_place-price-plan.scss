@@ -1,7 +1,15 @@
 .place-price-plan {
+  display: block;
+  text-decoration: none;
 
   & + & {
     margin-top: calc( 1em * 1.6);
+  }
+
+  &[href] {
+    .place-price-plan__title {
+      text-decoration: underline;
+    }
   }
 
   &.-advertising{
@@ -27,8 +35,6 @@
   }
 
   .place-price-plan__title {
-    text-decoration: underline;
-
     // -h4 相当
     font-weight: bold;
     font-size: 14px;
