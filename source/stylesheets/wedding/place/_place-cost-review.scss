@@ -1,0 +1,130 @@
+.place-cost-review {
+  display: block;
+
+  & + & {
+    margin-top: calc( 1em * 1.6);
+  }
+
+  &[href] {
+    text-decoration: none;
+  }
+
+  .place-cost-review__header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .place-cost-review__label {
+    flex: 1;
+    text-align: right;
+    padding-right: 1em;
+  }
+
+  .place-cost-review__label-conetnt {
+    display: inline-block;
+    padding: .3em .5em .4em;
+
+    // アイコン・ラベル
+    line-height: 1;
+    font-size: 12px;
+
+    &.-real {
+      color: $color-navy-D;
+      background-color: $color-gold-4S;
+    }
+
+    &.-pre {
+      color: $color-navy-D;
+      background-color: $color-blue-4S;
+    }
+  }
+
+  .place-cost-review__peple {
+    display: inline-block;
+  }
+
+  .place-cost-review__peple-value {
+    display: inline-block;
+  }
+
+  .place-cost-review__peple-per {
+    display: inline-block;
+
+    // アイコン・ラベル
+    line-height: 1;
+    font-size: 12px;
+  }
+
+  .place-cost-review__price {
+    // min-width: 50%;
+    text-align: right;
+  }
+
+  .place-cost-review__price-value {
+    display: inline-block;
+
+    // -h2 相当
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    // margin-bottom: 12px;
+  }
+
+  .place-cost-review__rpice-per {
+    display: inline-block;
+
+    // アイコン・ラベル
+    line-height: 1;
+    font-size: 12px;
+  }
+
+  .place-cost-review__body {
+    display: flex;
+  }
+
+  .place-cost-review__thumbnail {
+    width: 80px;
+    box-sizing: content-box;
+    padding-right: .5em;
+  }
+
+  .place-cost-review__attribute {
+    flex: 1;
+  }
+
+  .place-cost-review__date-body {
+    text-align: right;
+  }
+
+  .place-cost-review__date-type {
+    display: inline-block;
+  }
+
+  .place-cost-review__date {
+    display: inline-block;
+  }
+
+  .place-cost-review__description {
+    color: $color-navy-1S;
+    font-size: .8em;  // typography に入れる
+    line-height: 1.4;
+  }
+
+  .place-cost-review__reviewer {
+    padding-top: 7px;
+    display: flex;
+  }
+
+  .place-cost-review__reviewer-thumbnail {
+    width: 28px;
+  }
+
+  .place-cost-review__reviewer-body {
+    flex: 1;
+    padding-left: 7px;
+  }
+
+  .place-cost-review__reviewer-state {
+  }
+}
