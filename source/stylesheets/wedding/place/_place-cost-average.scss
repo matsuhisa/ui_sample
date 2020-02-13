@@ -1,0 +1,21 @@
+.place-cost-average {
+  text-align: center;
+
+  .place-cost-average__price-value {
+    display: inline-block;
+
+    // page-title  相当
+    font-weight: bold;
+    font-size: 34px;
+    // letter-spacing: -2px;
+    // margin-bottom: 50px;
+  }
+
+  .place-cost-average__per {
+    display: inline-block;
+  }
+
+  .place-cost-average__people {
+    display: inline-block;
+  }
+}
