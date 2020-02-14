@@ -4,6 +4,10 @@
   .place-cost-average__price-value {
     display: inline-block;
 
+    // 
+    @include symbol-base;
+    text-decoration-skip-ink: none;
+
     // page-title  相当
     font-weight: bold;
     font-size: 34px;
@@ -16,6 +20,9 @@
   }
 
   .place-cost-average__people {
+    @include symbol-base;
+    text-decoration-skip-ink: none;
+
     display: inline-block;
   }
 }

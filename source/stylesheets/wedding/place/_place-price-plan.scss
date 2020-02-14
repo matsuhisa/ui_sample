@@ -56,7 +56,8 @@
   }
 
   .place-price-plan__price {
-    line-height: 1;
+    @include symbol-base;
+    text-decoration-skip-ink: none;
 
     // -h2 相当
     font-weight: bold;
