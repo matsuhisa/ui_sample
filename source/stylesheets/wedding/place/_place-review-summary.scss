@@ -1,0 +1,56 @@
+.place-review-summary {
+  display: flex;
+  align-items: flex-end;
+
+  margin-bottom: calc( 1em * 1.4 );
+
+  .place-review-summary__label {
+    width: 50%;
+    text-align: right;
+    padding-right: 1em;
+
+    // -h3 相当
+    font-size: 18px;
+    letter-spacing: 1px;
+    // margin-bottom: 12px;
+
+    &.-rank-1 {
+      &::before {
+        @include symbol-base;
+        content: "#{map-get($symbol-unicodes, 'ranking-1')}";
+        color: $color-gold-D;
+        padding-right: .5em;
+      }
+    }
+
+    &.-rank-2 {
+      &::before {
+        @include symbol-base;
+        content: "#{map-get($symbol-unicodes, 'ranking-2')}";
+        color: $color-navy-2S;
+        padding-right: .5em;
+      }
+    }
+
+    &.-rank-3 {
+      &::before {
+        @include symbol-base;
+        content: "#{map-get($symbol-unicodes, 'ranking-3')}";
+        color: #cc9966;
+        padding-right: .5em;
+      }
+    }
+  }
+
+  .place-review-summary__socre {
+    // 数値
+    @include symbol-base;
+    text-decoration-skip-ink: none;
+
+    // page-title  相当
+    font-weight: bold;
+    font-size: 34px;
+    // letter-spacing: -2px;
+    // margin-bottom: 50px;
+  }
+}
