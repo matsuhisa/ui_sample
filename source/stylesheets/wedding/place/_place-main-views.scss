@@ -3,6 +3,8 @@
   box-sizing: border-box;
   border-bottom: 1px solid green;
 
+  margin: 0 $side-negative-margin;
+
   .place-main-view__images {
     width: 100%;
     height: calc(100% + 2em);
