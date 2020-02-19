@@ -2,4 +2,12 @@
   & + & {
     margin-top: $section-margin;
   }
+
+  .-h2 + .wedding-section__secondary {
+    margin-top: 0;
+  }
+
+  .wedding-section__secondary {
+    margin-top: $section-secondary-margin;
+  }
 }
