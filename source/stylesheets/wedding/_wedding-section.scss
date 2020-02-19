@@ -1,0 +1,5 @@
+.wedding-section {
+  & + & {
+    margin-top: $section-margin;
+  }
+}
