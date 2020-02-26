@@ -1,0 +1,92 @@
+.place-review {
+  display: flex;
+
+  .place-review__thumbnail {
+    width: 80px;
+  }
+
+  .place-review__body {
+    flex: 1;
+  }
+
+  .place-review__title-wrapper {
+  }
+
+  .place-review__title {
+    // -h4 相当
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    // margin-bottom: 7px;
+
+    & + & {
+      margin: .5em 0;
+    }
+
+    &.-good {
+      .place-review__title-icon {
+        &::before {
+          @include symbol-base;
+          content: "#{map-get($symbol-unicodes, 'good')}";
+          color: $color-green;
+        }
+      }
+    }
+
+    &.-bad {
+      .place-review__title-icon {
+        &::before {
+          @include symbol-base;
+          content: "#{map-get($symbol-unicodes, 'attention')}";
+          color: $color-navy;
+        }
+      }
+    }
+  }
+
+  .place-review__title-icon {
+    display: inline-block;
+  }
+
+  .place-review__title-body {
+    display: inline-block;
+  }
+
+  .place-review__date-body {
+    text-align: right;
+  }
+
+  .place-review__date-label {
+    display: inline-block;
+  }
+
+  .place-review__date {
+    display: inline-block;
+  }
+
+  .place-review__descripiton {
+    color: $color-navy-1S;
+    font-size: .8em;  // typography に入れる
+    line-height: 1.4;
+  }
+
+  .place-review__reviewer{
+  }
+
+  .place-review__reviewer {
+    padding-top: 7px;
+    display: flex;
+  }
+
+  .place-review__reviewer-thumbnail {
+    width: 28px;
+  }
+
+  .place-review__reviewer-body {
+    flex: 1;
+    padding-left: 7px;
+  }
+
+  .place-review__reviewer-state {
+  }
+}

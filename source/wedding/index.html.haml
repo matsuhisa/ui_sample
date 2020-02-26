@@ -78,7 +78,7 @@ title: ホテル椿山荘東京
           .place-tablist__tab-underline
 
   %section.wedding-section.place-reviews
-    %h2.headline.-h2 口コミ
+    // %h2.headline.-h2 口コミ
     .place-review-summary
       .place-review-summary__label 総合評価
       .place-review-summary__socre 4.05
@@ -128,16 +128,16 @@ title: ホテル椿山荘東京
                 %img.place-review-photos__thumbnail{ src: "https://d4w9i1j5cm7ll.cloudfront.net/rc/P001/218x218c/alb2/7/063/vvvvf7jpcmrte731g8kqd6310000000.jpg", width: 140 }
 
       .place-review
-        .place-review__title
-          .place-review__title.-good
-            .place-review__title-icon
-            .place-review__title-body 憧れのロイヤルウェディング
-          .place-review__title.-bad
-            .place-review__title-icon
-            .place-review__title-body 自分たちにとってアクセスが不便
+        -# .place-review__thumbnail
+        -#   %img{ src: "https://img.mwed.jp/c/f=webp:jpeg,w=160,h=160,a=2,r=auto/post/review/525294/venue/1/b96c066d-d452-4206-ad18-527bfef36cf0", width: 80 }
         .place-review__body
-          .place-review__thumbnail
-            %img{ src: "https://img.mwed.jp/c/f=webp:jpeg,w=160,h=160,a=2,r=auto/post/review/525294/venue/1/b96c066d-d452-4206-ad18-527bfef36cf0", width: 80 }
+          .place-review__title-wrapper
+            .place-review__title.-good
+              .place-review__title-icon
+              .place-review__title-body 憧れのロイヤルウェディング
+            .place-review__title.-bad
+              .place-review__title-icon
+              .place-review__title-body 自分たちにとってアクセスが不便
           .place-review__attribute
             .place-review__socre
               .place-review__socre-stars 
